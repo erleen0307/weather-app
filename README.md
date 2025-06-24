@@ -6,8 +6,11 @@ A responsive and visually appealing weather application built using **HTML**, **
 
 ## 📸 Screenshots
 
- Current Weather Screenshot(weather.png)
- Forecast Screenshot(forecast.png)
+Weather App
+[Current Weather Screenshot](weather.png)
+ 
+Forecast
+[Forecast Screenshot](forecast.png)
 
 ---
 
