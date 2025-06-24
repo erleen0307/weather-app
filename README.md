@@ -2,11 +2,11 @@
 
 A responsive and visually appealing weather application built using **HTML**, **CSS**, and **JavaScript**. It fetches real-time weather data and forecasts using the **OpenWeatherMap API**.
 
-## 🔗 Live Demo (https://erleen0307/weather-app)
+## 🔗 Live Demo [https://erleen0307/weather-app](https://erleen0307.github.io/weather-app/)
 
 ## 📸 Screenshots
 
-| ![Current Weather Screenshot](screenshots/weather.png) | ![Forecast Screenshot](screenshots/forecast.png) |
+| ![Current Weather Screenshot](weather.png) | ![Forecast Screenshot](forecast.png) |
 
 ---
 
@@ -65,9 +65,8 @@ weather-app/
 ├── index.html
 ├── style.css
 ├── script.js
-├── /screenshots
-│   ├── weather.png
-│   └── forecast.png
+├── weather.png
+├── forecast.png
 └── README.md
 
 ```
