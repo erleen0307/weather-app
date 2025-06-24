@@ -6,16 +6,16 @@ A responsive and visually appealing weather application built using **HTML**, **
 
 ## 📸 Screenshots
 
-| ![Current Weather Screenshot](weather.png) | ![Forecast Screenshot](forecast.png) |
+ Current Weather Screenshot(weather.png)
+ Forecast Screenshot(forecast.png)
 
 ---
 
 ## 🚀 Features
 
 - 🔍 Search weather by city name
-- 📊 Displays temperature, humidity, wind speed, and weather conditions
+- 📊 Displays min/max temperature, chances of precipitation, and weather conditions
 - 📆 Shows 5-day / 3-hour weather forecast
-- 🌈 Visually styled with light/dark theme and responsive layout
 - 🌐 Built entirely using frontend technologies (no frameworks)
 
 ---
