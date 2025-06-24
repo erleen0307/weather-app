@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>WEATHER FORECAST!</h1>
+    </header>
+    <main>
+        <div class="bg-icon cloud"></div>
+        <div class="bg-icon sun"></div>
+
+        <section class="mainFrame">          
+            <div class="inputSearch">
+                <input type="text" placeholder="Enter city name..." class="cityInput" aria-label="Input for Place">
+                <button class="searchBtn"> 
+                    <i class="fa-solid fa-magnifying-glass" aria-label="Magnifying-glass Icon"></i> 
+                </button>
+            </div>
+
+            <div class="weatherCard">
+                Weather Data Here
+            </div>
+        </section>
+
+        <p class="inputNote">Input Format: City,CountryCode (e.g. London,GB)</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

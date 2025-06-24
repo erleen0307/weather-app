@@ -1,0 +1,180 @@
+/* Global */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "QuickSand", sans-serif;
+    font-size: 1.2rem;
+    color: #264289;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #5aa9ce;  /* sky color */
+}
+
+/* Sun and Cloud Images */
+.bg-icon {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  pointer-events: none;
+}
+
+.bg-icon.cloud {
+  top: 50px;
+  left: 30px;
+  width: 200px;
+  height: 200px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/414/414825.png');
+}
+
+.bg-icon.sun {
+  top: 30px;
+  right: 50px;
+  width: 200px;
+  height: 200px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3222/3222807.png');
+}
+
+/* Main Frame */
+.mainFrame{
+    border: 1px solid #253C78;
+    height: 500px;
+    width: 600px;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #98D7F5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(6, 64, 198, 0.3);
+    z-index: 2; /* keep card on top */
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 15px;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+h1:hover{
+    font-size: 2.8rem;
+    color: #253C78;
+}
+
+/* Input Area and Search Button */
+.inputSearch {
+    height: 12%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.cityInput, .searchBtn{
+    height: 36px;
+    border: 1px solid #253C78;
+}
+
+.cityInput{
+    text-align: center;
+    width: 85%;
+    border-radius: 6px;
+}
+
+.searchBtn{
+    border-radius: 6px;
+    width: 36px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Weather Card */
+.weatherCard {
+    margin-top: 20px;
+    padding: 10px;
+    width: 90%;
+    background-color: #dbeeff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Sun Icon Animation */
+.weatherCard img.sunny {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Weather Icons Animation */
+.weatherCard img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Data Loader Icon Animation */
+.loader {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #253C78;
+  text-align: center;
+  padding: 20px;
+  animation: fade 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes fade {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+/* Input Format Note */
+.inputNote {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3d6b;
+  margin-top: 15px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Media Responsiveness */
+
+@media (max-width: 640px) {
+    .mainFrame {
+        width: 90%;
+        height: auto;
+    }
+
+    .cityInput {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .inputNote {
+    font-size: 0.8rem;
+    margin-top: 0;
+    }
+}
