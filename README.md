@@ -2,7 +2,7 @@
 
 A responsive and visually appealing weather application built using **HTML**, **CSS**, and **JavaScript**. It fetches real-time weather data and forecasts using the **OpenWeatherMap API**.
 
-## 🔗 Live Demo (https://yourusername.github.io/weather-app)
+## 🔗 Live Demo (https://erleen0307/weather-app)
 
 ## 📸 Screenshots
 
@@ -78,6 +78,5 @@ Have suggestions or spotted a bug?
 Feel free to open an issue or create a pull request.
 Let’s connect on [GitHub](https://github.com/erleen0307)!
 
-```
 
-### ❤️ Made with love by [erleen0307](https://github.com/erleen0307)
+## ❤️ Made with love by [erleen0307](https://github.com/erleen0307)
