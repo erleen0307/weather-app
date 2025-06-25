@@ -20,12 +20,12 @@ A responsive and visually appealing weather application built using **HTML**, **
 
 ## 🚀 Features
 
-🔍 Search weather by city name
-📊 Displays min/max temperature, chances of precipitation, and weather conditions
-📆 Shows 5-day / 3-hour weather forecast
-🌐 Built entirely using frontend technologies (no frameworks)
-🕘 Displays the 5 most recent searched cities as buttons
-💾 Stores and loads recent search history using localStorage, allowing users to re-search with a click
+- 🔍 Search weather by city name
+- 📊 Displays min/max temperature, chances of precipitation, and weather conditions
+- 📆 Shows 5-day / 3-hour weather forecast
+- 🌐 Built entirely using frontend technologies (no frameworks)
+- 🕘 Displays the 5 most recent searched cities as buttons
+- 💾 Stores and loads recent search history using localStorage, allowing users to re-search with a click
 
 ---
 
