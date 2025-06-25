@@ -18,28 +18,28 @@ body{
 
 /* Sun and Cloud Images */
 .bg-icon {
-  position: absolute;
-  z-index: 0;
-  opacity: 0.2;
-  background-repeat: no-repeat;
-  background-size: 200px;
-  pointer-events: none;
+	position: absolute;
+	z-index: 0;
+	opacity: 0.2;
+	background-repeat: no-repeat;
+	background-size: 200px;
+	pointer-events: none;
 }
 
 .bg-icon.cloud {
-  top: 50px;
-  left: 30px;
-  width: 200px;
-  height: 200px;
-  background-image: url('https://cdn-icons-png.flaticon.com/512/414/414825.png');
+	top: 50px;
+	left: 30px;
+	width: 200px;
+	height: 200px;
+	background-image: url('https://cdn-icons-png.flaticon.com/512/414/414825.png');
 }
 
 .bg-icon.sun {
-  top: 30px;
-  right: 50px;
-  width: 200px;
-  height: 200px;
-  background-image: url('https://cdn-icons-png.flaticon.com/512/3222/3222807.png');
+	top: 30px;
+	right: 50px;
+	width: 200px;
+	height: 200px;
+	background-image: url('https://cdn-icons-png.flaticon.com/512/3222/3222807.png');
 }
 
 /* Main Frame */
@@ -70,7 +70,7 @@ h1:hover{
     color: #253C78;
 }
 
-/* Input Area and Search Button */
+/* Clear History Button, Input Area and Search Button */
 .inputSearch {
     height: 12%;
     width: 80%;
@@ -81,7 +81,7 @@ h1:hover{
 }
 
 
-.cityInput, .searchBtn{
+.cityInput, .searchBtn, #clear-history{
     height: 36px;
     border: 1px solid #253C78;
 }
@@ -92,69 +92,106 @@ h1:hover{
     border-radius: 6px;
 }
 
-.searchBtn{
+.searchBtn, #clear-history{
     border-radius: 6px;
-    width: 36px;
     background-color: white;
     cursor: pointer;
 }
 
+.searchBtn{
+    width: 36px;
+}
+
+#clear-history{
+    width: 80px;
+}
+
+/* To center the Weather Card */
+.layoutWrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh; 
+	position: relative;
+}
+
 /* Weather Card */
 .weatherCard {
-    margin-top: 20px;
-    padding: 10px;
     width: 90%;
+	max-width: 90%;
     background-color: #dbeeff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
+	transition: all 0.3s ease;
 }
 
 /* Sun Icon Animation */
 .weatherCard img.sunny {
-  animation: spin 5s linear infinite;
+	animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(360deg); }
 }
 
 /* Weather Icons Animation */
 .weatherCard img {
-  animation: float 3s ease-in-out infinite;
+	animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+ 	0%, 100% { transform: translateY(0px); }
+	50% { transform: translateY(-8px); }
 }
 
 /* Data Loader Icon Animation */
 .loader {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #253C78;
-  text-align: center;
-  padding: 20px;
-  animation: fade 0.8s ease-in-out infinite alternate;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #253C78;
+	text-align: center;
+	padding: 20px;
+	animation: fade 0.8s ease-in-out infinite alternate;
 }
 
 @keyframes fade {
-  from { opacity: 0.5; }
-  to { opacity: 1; }
+	from { opacity: 0.5; }
+	to { opacity: 1; }
+}
+
+/* Recent Searches Buttons */
+
+#recent-container{
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+
+.recent-btn{
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    height: 38px;
+	padding: 6px;
+	width: auto;
+    border: 1px solid #253C78;
+    text-align: center;
+	margin: 10px;
 }
 
 /* Input Format Note */
 .inputNote {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1e3d6b;
-  margin-top: 15px;
-  margin-bottom: 12px;
-  text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #1e3d6b;
+	margin-top: 15px;
+	margin-bottom: 12px;
+	text-align: center;
 }
 
 /* Media Responsiveness */
