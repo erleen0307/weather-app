@@ -81,6 +81,7 @@ weather-app/
 ```
 
 ---
+### 📅 Date Completed: June 24, 2025
 
 <p align="center">
   ❤️ Made with love by <a href="https://github.com/erleen0307">erleen0307</a>
