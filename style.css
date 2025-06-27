@@ -196,22 +196,22 @@ h1:hover{
 
 /* Media Responsiveness */
 
-@media (max-width: 640px) {
-    .mainFrame {
+@media (max-width:768px){
+    #recent-container{
+		display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; 
+        justify-items: center;
+    }
+    #recent-container > :last-child {
+        grid-column: 1 / -1;
+        justify-self: center; 
+    }
+    .bg-icon{
+        display: none;
+    }
+    .mainFrame{
         width: 90%;
-        height: auto;
-    }
-
-    .cityInput {
-        width: 70%;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    .inputNote {
-    font-size: 0.8rem;
-    margin-top: 0;
+        padding: 1rem;
     }
 }
